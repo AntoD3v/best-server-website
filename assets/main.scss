@@ -12,8 +12,9 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
+  max-width: 1700px;
 }
 
 ul {
@@ -83,6 +84,10 @@ ul {
 }
 
 .servers {
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 
   .server {
 

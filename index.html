@@ -51,6 +51,7 @@
 
     <div class="servers">
 
+        <!-- Mineberry -->
         <div class="server">
 
             <div class="head">
@@ -85,11 +86,108 @@
             </div>
 
             <p>
-                Figma ipsum component variant main layer. Prototype team content hand flows. Scrolling select figjam
-                outline team bullet distribute pixel text. Ellipse underline strikethrough draft polygon scale.
-                Horizontal scrolling bullet italic select. Layout opacity rotate follower horizontal. Figma font vector
-                bullet component select group connection thumbnail follower. Line arrange scrolling outline horizontal
-                group. Undo effect follower library fill rotate. Mask blur content editor horizontal create.
+                Embarquez sur <b>Mineberry</b>, un serveur Skyblock inspiré par l'univers de <b>OnePiece</b>. Devenez
+                pirate,
+                affrontez vos ennemis avec des équipements uniques, et naviguez vers l'aventure. <b>Combattez des
+                mobs</b> et
+                des boss directement tirés de OnePiece, découvrez <b>des fruits du démon</b> pour des pouvoirs
+                extraordinaires,
+                et maniez le sabre légendaire de Gol D. Roger. Explorez un vaste monde ouvert, naviguez avec <b>des
+                bateaux
+                emblématiques</b>, et conquérez les <b>îles</b>. Prêt à vous lancer dans <u>l'aventure ultime</u> ?
+            </p>
+
+        </div>
+
+        <!-- SeasonSky -->
+        <div class="server">
+
+            <div class="head">
+
+                <h3>seasonsky</h3>
+
+                <div class="banner">
+
+                    <img src="./assets/seasonsky.gif" alt="seasonsky">
+
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <ul>
+
+                    <li><b>Type de serveur</b>: Minecraft vanilla</li>
+                    <li><b>Version</b>: 1.19.4</li>
+                    <li><b>Mode de jeu</b>: skyblock / aventure</li>
+
+                </ul>
+
+                <label>
+                    <button style="background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);">
+                        play.seasonsky.fr
+                    </button>
+                    <a>Clique pour copier</a>
+                </label>
+
+            </div>
+
+            <p>
+                Rejoignez <b>SeasonSky</b>, le serveur Skyblock en version <b>1.19.4+</b>, plongé dans un univers d'aventures
+                saisonnières au cœur d'<b>Eldoria</b>. Ce monde regorge de secrets à découvrir et de centaines de quêtes
+                palpitantes réparties sur de nombreuses îles mystérieuses. Commencez par créer votre île, développez-la
+                avec soin et stratégie pour la hisser au rang de l'île la plus puissante et respectée du serveur.
+                <b>SeasonSky</b> offre une expérience unique, mélangeant exploration, construction et aventures. Lancez-vous
+                dans cette aventure épique pour marquer votre empreinte dans le monde de <b>SeasonSky</b>.
+            </p>
+
+        </div>
+
+        <!-- Evolucraft -->
+        <div class="server">
+
+            <div class="head">
+
+                <h3>evolucraft</h3>
+
+                <div class="banner">
+
+                    <img src="./assets/evolucraft.gif" alt="evolucraft">
+
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <ul>
+
+                    <li><b>Type de serveur</b>: Minecraft vanilla</li>
+                    <li><b>Version</b>: 1.20.1</li>
+                    <li><b>Mode de jeu</b>: semi-rp / aventure</li>
+
+                </ul>
+
+                <label>
+                    <button style="background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);">
+                        play.evolucraft.fr
+                    </button>
+                    <a>Clique pour copier</a>
+                </label>
+
+            </div>
+
+            <p>
+                <b>Rejoignez EvoluCraft</b> : le serveur <b>Minecraft Semi-RP ultime</b> qui allie <b>survie,
+                construction, et aventure.</b>
+                Construisez votre propre ville, devenez riche et invitez vos amis à contribuer à votre empire.
+                Participez à une <b>quête épique</b> pour rétablir l'équilibre du monde, explorez des <b>donjons
+                mystérieux</b> avec
+                plus de <b>150 récompenses uniques</b>, et collectionnez des objets rares. Choisissez votre classe et
+                montez en
+                niveau.<br/>Débloquez des <b>métiers exclusifs</b>, créez des <b>statues et des meubles
+                personnalisés</b> pour enrichir votre ville
             </p>
 
         </div>
@@ -114,12 +212,15 @@
         var notif = document.createElement('notification');
         notif.innerText = "Copié !"
         e.target.parentElement.appendChild(notif);
-        setTimeout(function() {
+        setTimeout(function () {
             notif.remove()
         }, 2000);
     }
+
     document.querySelectorAll("button").forEach(e => {
-        console.log(e);e.onclick = copy});
+        console.log(e);
+        e.onclick = copy
+    });
 </script>
 
 </body>

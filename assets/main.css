@@ -85,12 +85,13 @@ ul {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  padding: 15px 0;
 }
 .servers .server .head .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .servers .server .head .logo img {
   max-width: 50%;
@@ -108,14 +109,14 @@ ul {
 .servers .server .head .logo label button {
   position: relative;
   border: none;
-  border-radius: 32px;
+  border-radius: 150px;
   color: white;
   font-size: 20px;
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
   text-align: center;
   font-weight: 600;
-  padding: 12px 20px;
+  padding: 12px 25px;
   cursor: pointer;
   transition: transform 0.3s;
 }

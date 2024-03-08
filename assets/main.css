@@ -34,20 +34,22 @@ ul {
   color: white;
   background-image: url("./wallpaper.jpeg");
   background-position: center;
-  background-size: contain;
-  border-bottom-left-radius: 150px;
-  border-bottom-right-radius: 150px;
+  background-size: cover;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
 }
 .welcome .gradient-effect {
-  background: linear-gradient(0deg, rgba(9, 2, 15, 0.67), rgba(9, 2, 15, 0.67)), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.37) 100%);
-  border-bottom-left-radius: 150px;
-  border-bottom-right-radius: 150px;
+  text-shadow: 0 4px 10px rgba(10, 8, 39, 0.5215686275);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
 }
 .welcome h1 {
-  padding: 125px 0;
+  padding: 35px 0;
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  font-size: 35px;
 }
 
 .explain {
@@ -67,6 +69,7 @@ ul {
   gap: 50px;
 }
 .servers .server {
+  background-color: #fff;
   padding: 20px 30px;
   border-radius: 30px;
   box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.5215686275);
@@ -124,8 +127,8 @@ footer {
   background-image: url("./wallpaper.jpeg");
   background-position: center;
   background-size: cover;
-  border-top-left-radius: 150px;
-  border-top-right-radius: 150px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
   font-family: Poppins, sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -133,9 +136,10 @@ footer {
   font-size: 25px;
 }
 footer .gradient-effect {
-  background: linear-gradient(180deg, rgba(9, 2, 15, 0.67), rgba(9, 2, 15, 0.67)), linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.37) 100%);
-  border-top-left-radius: 150px;
-  border-top-right-radius: 150px;
+  text-shadow: 0 4px 10px rgba(10, 8, 39, 0.5215686275);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
 }
 footer a {
   display: block;
@@ -145,6 +149,39 @@ footer a {
   text-align: center;
   color: white;
   text-decoration: none;
+}
+
+*[data-playercounter-ip] {
+  color: #49dd8b;
+  font-weight: 700;
+  position: relative;
+}
+*[data-playercounter-ip]:before, *[data-playercounter-ip]:after {
+  content: " ";
+  position: absolute;
+  right: -16px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background-color: #49dd8b;
+}
+*[data-playercounter-ip]:after {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 
 notification {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap');
 
-$radius: 150px;
+$radius: 75px;
 
 * {
 
@@ -42,15 +42,15 @@ ul {
 
   background-image: url("./wallpaper.jpeg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   border-bottom-left-radius: $radius;
   border-bottom-right-radius: $radius;
 
   .gradient-effect {
 
-    background: linear-gradient(0deg, rgba(9, 2, 15, 0.67), rgba(9, 2, 15, 0.67)), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.37) 100%);
-
+    text-shadow: 0 4px 10px #0A082785;
+    background-color: rgba(0,0,0,0.3);
     border-bottom-left-radius: $radius;
     border-bottom-right-radius: $radius;
 
@@ -58,10 +58,11 @@ ul {
 
   h1 {
 
-    padding: 125px 0;
+    padding: 35px 0;
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    font-size: 35px;
 
   }
 
@@ -74,6 +75,11 @@ ul {
   text-align: center;
   margin: 50px 0;
   gap: 10px;
+
+  //background-color: #fff;
+  //box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.5215686275);
+  //border-radius: 25px;
+  //padding: 25px;
 
   p {
 
@@ -91,6 +97,7 @@ ul {
 
   .server {
 
+    background-color: #fff;
     padding: 20px 30px;
     border-radius: 30px;
     box-shadow: 0px 4px 10.100000381469727px 0px #0A082785;
@@ -191,7 +198,8 @@ footer {
 
   .gradient-effect {
 
-    background: linear-gradient(180deg, rgba(9, 2, 15, 0.67), rgba(9, 2, 15, 0.67)), linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.37) 100%);
+    text-shadow: 0 4px 10px #0A082785;
+    background-color: rgba(0,0,0,0.2);
 
     border-top-left-radius: $radius;
     border-top-right-radius: $radius;
@@ -210,6 +218,49 @@ footer {
 
   }
 
+}
+
+*[data-playercounter-ip] {
+
+  color: #49dd8b;
+  font-weight: 700;
+  position: relative;
+
+  &:before, &:after {
+
+    content: " ";
+    position: absolute;
+    right: -16px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background-color: #49dd8b;
+
+  }
+
+  &:after {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+
+  }
 }
 
 notification {

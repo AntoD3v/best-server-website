@@ -232,7 +232,7 @@
 
 <script>
     function copy(e) {
-        navigator.clipboard.writeText(e.target.innerText.toLowerCase())
+        navigator.clipboard.writeText(e.target.querySelector("span").attributes.getNamedItem("data-playercounter-ip").value)
         const notify = document.createElement('notification');
         notify.innerText = "Copié !"
         e.target.parentElement.appendChild(notify);

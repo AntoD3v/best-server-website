@@ -29,7 +29,7 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 96px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: white;
   background-image: url("./wallpaper.jpeg");
@@ -46,7 +46,6 @@ ul {
 }
 .welcome h1 {
   padding: 35px 0;
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   font-size: 35px;
@@ -73,7 +72,7 @@ ul {
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 25px;
-  box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.4);
+  box-shadow: 0 4px 10.1000003815px 0 rgba(10, 8, 39, 0.4);
 }
 .servers .server .top {
   width: 100%;
@@ -119,6 +118,7 @@ ul {
   padding: 12px 25px;
   cursor: pointer;
   transition: transform 0.3s;
+  background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);
 }
 .servers .server .head .logo label button:hover {
   transform: scale(1.05);

@@ -52,7 +52,7 @@
                     <img src="assets/mineberry-logo.png" width="25%" alt="mineberry logo"/>
 
                     <label>
-                        <button style="background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);">
+                        <button>
                             play.mineberry.fr
                             <div class="player"><span data-playercounter-ip="play.mineberry.fr">0</span> joueurs en
                                 ligne
@@ -107,7 +107,7 @@
                     <img src="assets/evolucraft-logo.png" alt="evolucraft logo"/>
 
                     <label>
-                        <button style="background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);">
+                        <button>
                             play.evolucraft.fr
                             <div class="player"><span data-playercounter-ip="play.evolucraft.fr">0</span> joueurs en
                                 ligne
@@ -162,7 +162,7 @@
                     <img src="assets/seasonsky-logo.png" alt="seasonsky logo"/>
 
                     <label>
-                        <button style="background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);">
+                        <button>
                             play.seasonsky.fr
                             <div class="player"><span data-playercounter-ip="play.seasonsky.fr">0</span> joueurs en
                                 ligne
@@ -219,17 +219,13 @@
 <script>
     function copy(e) {
         navigator.clipboard.writeText(e.target.innerText.toLowerCase())
-        var notif = document.createElement('notification');
-        notif.innerText = "Copié !"
-        e.target.parentElement.appendChild(notif);
-        setTimeout(function () {
-            notif.remove()
-        }, 2000);
+        const notify = document.createElement('notification');
+        notify.innerText = "Copié !"
+        e.target.parentElement.appendChild(notify);
+        setTimeout(() => notify.remove(), 2000);
     }
 
-    document.querySelectorAll("button").forEach(e => {
-        e.onclick = copy
-    });
+    document.querySelectorAll("button").forEach(e => e.onclick = copy);
 </script>
 
 <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>

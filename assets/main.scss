@@ -37,7 +37,7 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 96px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: white;
 
@@ -60,7 +60,6 @@ ul {
   h1 {
 
     padding: 35px 0;
-    width: 50%;
     margin: 0 auto;
     text-align: center;
     font-size: 35px;
@@ -76,11 +75,6 @@ ul {
   text-align: center;
   margin: 50px 0;
   gap: 10px;
-
-  //background-color: #fff;
-  //box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.5215686275);
-  //border-radius: 25px;
-  //padding: 25px;
 
   p {
 
@@ -102,7 +96,7 @@ ul {
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 25px;
-    box-shadow: 0px 4px 10.1000003815px 0px rgb(10 8 39 / 40%);
+    box-shadow: 0 4px 10.1000003815px 0 rgb(10 8 39 / 40%);
 
     .top {
 
@@ -162,6 +156,7 @@ ul {
             padding: 12px 25px;
             cursor: pointer;
             transition: transform 0.3s;
+            background: linear-gradient(90.09deg, #3D67FF -46.05%, #51FFEA 99.92%);
 
             &:hover {
 

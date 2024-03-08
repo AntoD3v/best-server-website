@@ -61,6 +61,7 @@ ul {
 }
 .explain p {
   font-family: Inter, sans-serif;
+  margin: 5px;
 }
 
 .servers {
@@ -71,44 +72,43 @@ ul {
 .servers .server {
   background-color: #fff;
   padding: 20px 30px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.5215686275);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10.1000003815px 0px rgba(10, 8, 39, 0.4);
+}
+.servers .server .top {
+  width: 100%;
+  font-size: 10px;
+  border-bottom: 2px solid #efeeee;
+  margin-bottom: 28px;
 }
 .servers .server .head {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
-.servers .server .head h3 {
-  text-align: center;
-  font-family: Poppins, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-}
-.servers .server .head .banner img {
-  width: 100%;
-}
-.servers .server .info {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.servers .server .head .logo {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 15px 0;
+  gap: 20px;
 }
-.servers .server .info label {
+.servers .server .head .logo img {
+  max-width: 50%;
+}
+.servers .server .head .logo label {
   position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
   flex-direction: column;
 }
-.servers .server .info label a {
+.servers .server .head .logo label a {
   font-size: 10px;
 }
-.servers .server .info label button {
+.servers .server .head .logo label button {
+  position: relative;
   border: none;
-  border-radius: 40px;
+  border-radius: 32px;
   color: white;
   font-size: 20px;
   text-transform: uppercase;
@@ -116,9 +116,44 @@ ul {
   text-align: center;
   font-weight: 600;
   padding: 12px 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
-.servers .server .info label * {
+.servers .server .head .logo label button:hover {
+  transform: scale(1.05);
+}
+.servers .server .head .logo label button .player {
+  font-size: 9px;
+  color: #fff;
+  font-weight: 700;
+}
+.servers .server .head .logo label button .player span {
+  color: #fff;
+  margin-left: 20px;
+}
+.servers .server .head .logo label * {
   text-align: center;
+}
+.servers .server .head h3 {
+  display: none;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.servers .server .head .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.servers .server .head .banner img {
+  width: 100%;
+}
+.servers .server .head .banner ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
@@ -143,7 +178,7 @@ footer .gradient-effect {
 }
 footer a {
   display: block;
-  padding: 75px 0;
+  padding: 50px 0;
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -159,8 +194,8 @@ footer a {
 *[data-playercounter-ip]:before, *[data-playercounter-ip]:after {
   content: " ";
   position: absolute;
-  right: -16px;
-  top: 5px;
+  left: -16px;
+  top: 2px;
   width: 8px;
   height: 8px;
   display: block;
@@ -200,6 +235,17 @@ notification {
   border-radius: 50px;
   font-size: 16px;
   bottom: -20px;
+  animation: notification 0.5s;
+}
+@keyframes notification {
+  0% {
+    bottom: -50px;
+    opacity: 0.5;
+  }
+  100% {
+    bottom: -20px;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

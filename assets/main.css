@@ -249,4 +249,14 @@ notification {
   }
 }
 
+@media (max-width: 980px) {
+  .container {
+    margin: 0 25px;
+  }
+  .servers .server .head {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
